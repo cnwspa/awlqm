@@ -1,14 +1,14 @@
 <x-app-layout>
 
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="bg-white">
+<div class="bg-gray-100">
 
     <h1>  </h1>
     
     <main>
       <div>
         <!-- Hero card -->
-        <div class="relative mt-2">
+        <div class="relative mt-5">
           <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
           <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
