@@ -250,13 +250,19 @@
                         @endforeach
                     @endif
                 </div>
+            </div>       
+               
+            @else
+            <div class="py-1 border-t border-gray-200">
+                <x-jet-responsive-nav-link href="{{ route('login') }}" :active="request()->routeIs('login')">
+                Ingresar
+                </x-jet-responsive-nav-link>
+    
+                <x-jet-responsive-nav-link href="{{ route('register') }}" :active="request()->routeIs('register')">
+                Registro
+                </x-jet-responsive-nav-link>
+    
             </div>
-
-        @else
-        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Ingresar</a>
-        <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Registrar</a>    
-                   
-                       
         @endauth
     </div>
 </nav>
