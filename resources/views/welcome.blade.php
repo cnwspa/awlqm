@@ -22,7 +22,7 @@
                   <span class="block text-indigo-200">Tu tranquilidad</span>
                 </h1>
                 <p class="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-1xl">Con más de 20 años en ruta desde Arica a Punta Arenas, 
-                    ofrecemos el servicio más seguro y ágil para tus clientes</p>
+                    ofrecemos el servicio más seguro y ágil de cara a tus clientes</p>
                 <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
                   <div class="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
                     <a href="{{ route('login') }}" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8"> Ingresar </a>

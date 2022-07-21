@@ -6,7 +6,22 @@
             'active' => request()->routeIs('dashboard')
         ],
         [
-            'name' => 'Flota',
+            'name' => 'Qué hacemos',
+            'route' => '#',
+            'active' => false
+        ],
+        [
+            'name' => 'Trabaja con Nosotros',
+            'route' => '#',
+            'active' => false
+        ],
+        [
+            'name' => 'Contacto',
+            'route' => '#',
+            'active' => false
+        ],
+        [
+            'name' => '',
             'route' => '#',
             'active' => false
         ],
