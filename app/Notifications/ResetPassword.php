@@ -80,7 +80,7 @@ class ResetPassword extends Notification
             ->subject(Lang::get('Reestablecer Contraseña'))
             ->line(Lang::get('Está recibiendo este correo electrónico porque recibimos una solicitud de restablecimiento de contraseña para su cuenta.'))
             ->action(Lang::get('Resetear Contraseña'), $url)
-            ->line(Lang::get('Este enlace de restablecimiento de contraseña caducará en', ['count' => config('auth.passwords.'.config('auth.defaults.passwords').'.expire')]))
+            ->line(Lang::get('Este enlace de restablecimiento de contraseña caducará en :count minutes.', ['count' => config('auth.passwords.'.config('auth.defaults.passwords').'.expire')]))
             ->line(Lang::get('Si no solicitó un restablecimiento de contraseña, no se requiere ninguna otra acción.'));
     }
 
