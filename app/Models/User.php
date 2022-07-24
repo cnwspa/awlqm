@@ -10,6 +10,8 @@ use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Sanctum\HasApiTokens;
 use App\Notifications\ResetPassword;
+use Illuminate\Support\Facades\Mail;
+
 
 class User extends Authenticatable
 {
@@ -18,6 +20,18 @@ class User extends Authenticatable
     use HasProfilePhoto;
     use Notifiable;
     use TwoFactorAuthenticatable;
+
+    /**
+ * Send the password reset notification.
+ *
+ * @param  string  $token
+ * @return void
+ */
+
+public function sendPasswordResetNotification($token)
+{
+    $this->notify(new PasswordReset($token));
+};
 
     /**
      * The attributes that are mass assignable.
