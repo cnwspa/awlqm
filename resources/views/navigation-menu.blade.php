@@ -274,7 +274,7 @@
                 </x-jet-responsive-nav-link>
     
                 <x-jet-responsive-nav-link href="{{ route('register') }}" :active="request()->routeIs('register')">
-                Registro
+                Registrar
                 </x-jet-responsive-nav-link>
     
             </div>
