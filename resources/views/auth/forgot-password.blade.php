@@ -26,7 +26,7 @@
 
             <div class="flex items-center justify-end mt-4">
                 <x-jet-button>
-                    {{ __('Reestablecer por correo electrónico') }}
+                    {{ __('Reestablecer') }}
                 </x-jet-button>
             </div>
         </form>
