@@ -121,7 +121,7 @@
           </svg>
         </a>
       </div>
-      <p class="mt-8 text-center text-base text-gray-400">&copy; 2020 Workflow, Inc. All rights reserved.</p>
+      <p class="mt-8 text-center text-base text-gray-400">&copy; 2022 Transportes LQM SpA.</p>
     </div>
   </footer>
 </div>  
