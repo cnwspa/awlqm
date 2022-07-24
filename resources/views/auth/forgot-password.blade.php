@@ -5,7 +5,7 @@
         </x-slot>
 
         <div class="mb-4 text-sm text-gray-600">
-            {{ __('Ingresa tu dirección de correo electrónico, se enviará un enlace para generar tu nueva contraseña.') }}
+            {{ __('Ingresa tu dirección de correo electrónico. Se enviará un enlace para generar tu nueva contraseña.') }}
         </div>
 
         @if (session('status'))
