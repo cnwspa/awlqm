@@ -2,8 +2,8 @@
     $nav_links = [
         [
             'name' => 'Transportes LQM',
-            'route' => route('dashboard'),
-            'active' => request()->routeIs('dashboard')
+            'route' => route('welcome'),
+            'active' => request()->routeIs('welcome')
         ],
         [
             'name' => 'Qué hacemos',

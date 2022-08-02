@@ -21,7 +21,7 @@
                   <span class="block text-white">Nuestro objetivo es</span>
                   <span class="block text-indigo-200">Tu tranquilidad</span>
                 </h1>
-                <p class="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-1xl">Más de 20 años en ruta desde Arica a Punta Arenas, 
+                <p class="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-1xl">Más de 25 años en ruta desde Arica a Punta Arenas, 
                     brindando la máxima calidad en transporte de carga.</p>
                 <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
                   <div class="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
@@ -60,7 +60,7 @@
   <!-- Footer section -->
   <footer class="mt-24 bg-gray-900 sm:mt-12">
     <div class="mx-auto max-w-md py-12 px-4 overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-      <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
+      {{-- <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
         <div class="px-5 py-2">
           <a href="#" class="text-base text-gray-400 hover:text-gray-300"> About </a>
         </div>
@@ -84,7 +84,7 @@
         <div class="px-5 py-2">
           <a href="#" class="text-base text-gray-400 hover:text-gray-300"> Partners </a>
         </div>
-      </nav>
+      </nav> --}}
       <div class="mt-8 flex justify-center space-x-6">
         <a href="#" class="text-gray-400 hover:text-gray-300">
           <span class="sr-only">Facebook</span>
