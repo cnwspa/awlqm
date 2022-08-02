@@ -15,17 +15,17 @@
             </div>
 
             <div class="mt-4">
-                <x-jet-label for="name" value="{{ __('Nombre Completo') }}" />
+                <x-jet-label for="name" value="{{ __('Nombre completo') }}" />
                 <x-jet-input id="name" class="block mt-1 w-full" type="text" name="nombre" :value="old('nombre')" required autofocus autocomplete="nombre" />
             </div>
 
             <div class="mt-4">
-                <x-jet-label for="name" value="{{ __('Nombre de Usuario') }}" />
+                <x-jet-label for="name" value="{{ __('Nombre de usuario') }}" />
                 <x-jet-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
             </div>
             
             <div class="mt-4">
-                <x-jet-label for="email" value="{{ __('Email') }}" />
+                <x-jet-label for="email" value="{{ __('Correo electrónico') }}" />
                 <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
             </div>
 
@@ -35,7 +35,7 @@
             </div>
 
             <div class="mt-4">
-                <x-jet-label for="password_confirmation" value="{{ __('Confirmar Contraseña') }}" />
+                <x-jet-label for="password_confirmation" value="{{ __('Confirmar contraseña') }}" />
                 <x-jet-input id="password_confirmation" class="block mt-1 w-full" type="password" name="password_confirmation" required autocomplete="new-password" />
             </div>
 
