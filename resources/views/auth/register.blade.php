@@ -8,17 +8,22 @@
 
         <form method="POST" action="{{ route('register') }}">
             @csrf
-
+            
             <div>
-                <x-jet-label for="name" value="{{ __('Nombre de Usuario') }}" />
-                <x-jet-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
-            </div>
-
-            <div class="mt-4">
-                <x-jet-label for="rut" value="{{ __('Rut') }}" />
+                <x-jet-label for="rut" value="{{ __('Rut sin guión') }}" />
                 <x-jet-input id="rut" class="block mt-1 w-full" type="text" name="rut" :value="old('email')" required />
             </div>
 
+            <div class="mt-4">
+                <x-jet-label for="name" value="{{ __('Nombre Completo') }}" />
+                <x-jet-input id="name" class="block mt-1 w-full" type="text" name="nombre" :value="old('nombre')" required autofocus autocomplete="nombre" />
+            </div>
+
+            <div class="mt-4">
+                <x-jet-label for="name" value="{{ __('Nombre de Usuario') }}" />
+                <x-jet-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
+            </div>
+            
             <div class="mt-4">
                 <x-jet-label for="email" value="{{ __('Email') }}" />
                 <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />

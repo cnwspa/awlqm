@@ -39,8 +39,9 @@ public function sendResetPasswordNotification($token)
      * @var string[]
      */
     protected $fillable = [
-        'name',
         'rut',
+        'nombre',
+        'name',
         'email',
         'password',
     ];
