@@ -13,15 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('user_fletes', function (Blueprint $table) {
+        Schema::create('tiposflete', function (Blueprint $table) {
             $table->id();
-
-            $table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('flete_id');
-
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('set null');
-            $table->foreign('flete_id')->references('id')->on('fletes')->onDelete('set null');
-
+            $table->string('name');
             $table->timestamps();
         });
     }
@@ -33,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_fletes');
+        Schema::dropIfExists('tiposflete');
     }
 };
