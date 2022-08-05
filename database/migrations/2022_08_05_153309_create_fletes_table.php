@@ -27,7 +27,7 @@ return new class extends Migration
             $table->integer('comision');
             $table->date('inicio');
             $table->date('termino');
-            $table->enum('status',[fletes::ACTIVO,fletes::TERMINADO,fletes::PAGADO])->default(Serie::ACTIVO);
+            $table->enum('status',[fletes::ACTIVO,fletes::TERMINADO,fletes::PAGADO])->default(fletes::ACTIVO);
 
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('origen_id')->nullable();
