@@ -4,6 +4,8 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
+use App\Models\fletes;
+
 return new class extends Migration
 {
     /**
@@ -25,6 +27,7 @@ return new class extends Migration
             $table->integer('comision');
             $table->date('inicio');
             $table->date('termino');
+            $table->enum('status',[fletes::ACTIVO,fletes::TERMINADO,fletes::PAGADO])->default(Serie::ACTIVO);
 
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('origen_id')->nullable();

@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class fletes extends Model
 {
     use HasFactory;
+
+    const ACTIVO =1;
+    const TERMINADO =2;
+    const PAGADO =3;
 }
